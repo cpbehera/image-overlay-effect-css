@@ -1,0 +1,38 @@
+body{
+    background: #f1f1f1;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.post{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+}
+.post:hover .post-overlay{
+    width: 600px;
+}
+.post img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.post-overlay{
+    width: 0;
+    height: 400px;
+    background: rgba(103,58,183,0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+.post-overlay h2{
+    color: #fff;
+    font-size: 50px;
+    border: 6px solid #fff;
+    padding: 10px 30px;
+}
